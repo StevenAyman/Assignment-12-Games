@@ -1,0 +1,92 @@
+:root {
+  --main-transition: 0.5s;
+}
+
+body {
+  font-family: cursive;
+}
+
+.loading {
+  z-index: 99999999;
+  background-color: #212529e3;
+}
+
+.loading i {
+  font-size: 60px;
+}
+/* Header section start */
+img[alt="Games"] {
+  height: 30vh;
+}
+nav img {
+  width: 50px;
+}
+
+nav ul li a {
+  font-size: 12px !important;
+  cursor: pointer;
+  color: #fff !important;
+  transition: var(--main-transition);
+}
+
+nav ul li a:hover,
+.active-link {
+  color: #147eb0 !important;
+}
+
+.main-nav {
+  background-color: #3a497b;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.408);
+}
+
+.position-sticky {
+  z-index: 99999;
+}
+
+/* Header section end */
+/* Games section start */
+.card {
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card .image img {
+  filter: grayscale(1);
+  transition: var(--main-transition);
+}
+
+.card:hover .image img {
+  filter: grayscale(0);
+}
+
+.card-title .badge {
+  background-color: #3a497b;
+  transition: var(--main-transition);
+}
+
+.card:hover .card-title .badge {
+  background-color: #0d6efd;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.card .card-text {
+  height: 50px;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: #30363c;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #212529;
+  border-radius: 10px;
+}
+/* Games section end */
